@@ -30,3 +30,12 @@ Compilation of useful utility functions in Lua, so far for the table, string & m
 - `math.scaleValue(input, minValue, maxValue, minOutput, maxOutput)`: Translates a value to be normalized/scaled into another range
 
 Each function is documented with a brief description and usage examples in the source code for easy reference
+
+# Callback System
+Callbacks are functions passed into other functions as arguments, which are invoked to complete some kind of routine or action at a later time. In the context of client-server communication, they are particularly useful for handling asynchronous operations. This allows a client to continue operating in its environment without the need to wait for a server response, thereby enhancing performance and user experience.
+
+## Utility of Callbacks
+In our implementation, callbacks are used to request data from a server and then execute a response action once that data is received. This is crucial in scenarios where immediate data processing is not necessary, or where operations may take some time to complete, such as database queries or complex calculations. Our callback system ensures that these interactions are handled efficiently, maintaining smooth communication between client and server.
+
+By incorporating callbacks into our utilities, developers can create more responsive, robust, and user-friendly packages.
+
